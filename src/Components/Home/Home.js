@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
-import Data from '../../Components/Image/data/data.json'
+import datas from '../../Components/Image/data/data.json'
 import { Button ,Card } from 'react-bootstrap';
 import { useHistory } from 'react-router';
 
 const Home = () => {
     const [data , setData] = useState();
     useEffect(()=>{
-        setData(Data)
+        setData(datas)
     },[Data])
     const history = useHistory()
     const handleDestination = ()=>{
