@@ -5,7 +5,7 @@ import { Button ,Card } from 'react-bootstrap';
 import { useHistory } from 'react-router';
 
 const Home = () => {
-    const [data , setData] = useState();
+    const [data , setData] = useState([]);
     useEffect(()=>{
         setData(datas)
     },[datas])
