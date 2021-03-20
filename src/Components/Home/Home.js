@@ -8,11 +8,10 @@ const Home = () => {
     const [data , setData] = useState([]);
     useEffect(()=>{
         setData(datas)
-    },[datas])
+    },[])
     const history = useHistory()
     const handleDestination = ()=>{
         history.push('/destination')
-        // console.log('onClick')
     }
     return (
         <div className ="row">
