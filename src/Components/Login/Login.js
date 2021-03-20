@@ -12,6 +12,8 @@ firebase.initializeApp(firebaseConfig)
 function Login() {
  
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  const data = loggedInUser;
+  console.log(data)
   let history = useHistory()
   let location = useLocation()
   let { from } = location.state || { from: { pathname: "/" } };
@@ -61,7 +63,9 @@ const  handleSignOut = ()=>{
     success : false
     }
     setSignInUser(signOut)
+    setLoggedInUser(signOut)
   }).catch((error) => {
+  
     
   });
 }
