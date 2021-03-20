@@ -21,7 +21,7 @@ const Home = () => {
         <div className = 'col-md-4'>
             <Card style={{ width: '18rem' }}>
             {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
-            <Card.Img src={ticket.background} />
+            {/* <Card.Img src={ticket.background} /> */}
             <Card.Body>
                 <Card.Title>{ticket.ticketName}</Card.Title>
                 <Button variant="success" onClick = {handleDestination} >Buy Now</Button>
