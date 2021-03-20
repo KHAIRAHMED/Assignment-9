@@ -8,7 +8,7 @@ const Home = () => {
     const [data , setData] = useState();
     useEffect(()=>{
         setData(datas)
-    },[Data])
+    },[datas])
     const history = useHistory()
     const handleDestination = ()=>{
         history.push('/destination')
