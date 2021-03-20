@@ -1,0 +1,6 @@
+[
+    {"id":1,"ticketName":"ONE TIME TICKET","ticketPrice":100,"ticketType1":"ticket1","ticketType2":"ticket2","ticketType3":"ticket3","ticketPrice1":65,"ticketPrice2":66,"ticketPrice3":66,"background":"https://ibb.co/BBWsRKQhttps://ibb.co/pZt2GNN","ticket":"https://ibb.co/DkWPY6p" },
+    {"id":2,"ticketName":"ONE DAY PASS ","ticketPrice":500,"ticketType1":"ticket1","ticketType2":"ticket2","ticketType3":"ticket3","ticketPrice1":75,"ticketPrice2":96,"ticketPrice3":106,"background":"../../Image/background.png","ticket":"https://ibb.co/DkWPY6p" },
+    {"id":3,"ticketName":"MONTHLY PASS","ticketPrice":1500,"ticketType1":"ticket1","ticketType2":"ticket2","ticketType3":"ticket3","ticketPrice1":199,"ticketPrice2":336,"ticketPrice3":666,"background":"https://ibb.co/ph1GBTd","ticket":"https://ibb.co/DkWPY6p" },
+    {"id":4,"ticketName":"ANNUAL PASS","ticketPrice":9000,"ticketType1":"ticket1","ticketType2":"ticket2","ticketType3":"ticket3","ticketPrice1":165,"ticketPrice2":266,"ticketPrice3":66,"background":"https://ibb.co/ph1GBTd","ticket":"https://ibb.co/q9fCbDV" }
+]
