@@ -9,7 +9,8 @@ const Destination = () => {
     },[])
 
     const [info,setInfo] = useState({});
-    const inFo=()=>{
+    const inFo = (e)=>{
+        e.preventDefault();
         const dataInfo = data.find(kk=>kk.id === id)
         setInfo(dataInfo)
     }
