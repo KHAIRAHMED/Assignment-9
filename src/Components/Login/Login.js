@@ -155,25 +155,25 @@ const updateName = name =>{
  
 
   return (
-    <div style={{textAlign : "center" , color : "white"}}>
+    <div style={{textAlign : "center" , color : "black"}}>
 
       {
-        signInUser.isLogIn?<button onClick={handleSignOut}  style = {{color : "white"}}>Sign Out With Google</button>:<button onClick={handleSignIn}  style = {{color : "white"}}> Sign In With Google</button>
+        signInUser.isLogIn?<button onClick={handleSignOut}  style = {{color : "black"}}>Sign Out With Google</button>:<button onClick={handleSignIn}  style = {{color : "black"}}> Sign In With Google</button>
       }
       
       <h5>..........................................................OR.............................................................</h5>
       {/* email part  */}
-       <div style ={{border:"2px solid white" , color :"white"}}>
+       <div style ={{border:"2px solid white" , color :"black"}}>
             <input type="checkbox" name="newUser" id="" onChange={()=> setNewUser(!newUser)} />
-            <label htmlFor="newUswe" style={{color :"white"}}> Sig Up With Email </label>
-            <form onSubmit={handleSubmit} style = {{color : "white"}}>
+            <label htmlFor="newUswe" style={{color :"black"}}> Sig Up With Email </label>
+            <form onSubmit={handleSubmit} style = {{color : "black"}}>
                 {
                   newUser && <input type="text" name="name" onBlur={handleValue} placeholder="Enter Name" />
                 }
                 <br/><br/>
                 <input type="email" name="email" id="" required placeholder="Enter Your Email" onBlur={handleValue} /> <br/> <br/>
                 <input type="password"  name="password" required id="" placeholder="Enter Password" onBlur={handleValue}/> <br/><br/>
-                <input type="submit" style = {{color : "white"}} variant="danger" value={newUser ? "Sign Up With Email":"Sign In Email "}/>
+                <input type="submit" style = {{color : "black"}} variant="danger" value={newUser ? "Sign Up With Email":"Sign In Email "}/>
             </form>
             <p style ={{color:'red'}}>{signInUser.error}</p>
             {

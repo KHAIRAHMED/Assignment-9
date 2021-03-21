@@ -7,7 +7,7 @@ const Header = () => {
     
     return (
        
-    <Navbar color='white' variant="dark" >
+    <Navbar color='black' variant="black" >
     <Navbar.Brand href="">Air Bus Ticket</Navbar.Brand>
     <Nav className="mr-auto">
           <Nav.Link href="/home">Home</Nav.Link>

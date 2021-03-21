@@ -10,21 +10,19 @@ const Home = () => {
         setData(datas)
     },[])
     const history = useHistory()
-    const handleDestination = ()=>{
-        history.push('/destination')
+    const handleDestination = id =>{
+        history.push(`destination/${id}`);
     }
     return (
         <div className ="row">
             {
                 data?.map((ticket)=>
-        <div className = 'col-md-4'>
-            <Card style={{ width: '18rem' }}>
-            {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
-            {/* <Card.Img src={ticket.background} /> */}
-            <Card.Body>
-                <Card.Title>{ticket.ticketName}</Card.Title>
-                <Button variant="success" onClick = {handleDestination} >Buy Now</Button>
-                <h1>${ticket.ticketPrice}</h1>
+        <div className = 'col-md-3'>
+            <Card  style={{backgroundImage:`url(${ticket.background})`,backgroundRepeat : "no-repeat",backgroundSize:"200px",width:"300px",height:"300px",border:"none"}}>
+            <Card.Body >
+                <Card.Title style={{marginTop:"25px"}}>{ticket.ticketName}</Card.Title>
+                <Button style={{marginTop:"25px"}} variant="success" onClick = {()=>handleDestination(ticket.id)} >Buy Now</Button>
+                <h1 style={{marginTop:"52px"}}>${ticket.ticketPrice}</h1>
                 
             </Card.Body>
             </Card>
